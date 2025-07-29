@@ -1,69 +1,70 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lucas Gontijo | QA</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: #111; color: white; font-family: sans-serif; margin: 0; padding: 0; }
+    header, section { padding: 2rem; }
+    h1, h2 { color: #fff; }
+    nav { background: #000; padding: 1rem; display: flex; gap: 2rem; }
+    nav a { color: white; text-decoration: none; }
+    .projects { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .project-card {
+      background: #222; padding: 1rem; border-radius: 8px; text-align: center; width: 200px;
+    }
+    .project-card img { width: 80px; height: 80px; object-fit: contain; }
+    ul { padding-left: 1rem; }
+    .photo { float: right; width: 160px; border-radius: 10px; margin-left: 2rem; }
+  </style>
 </head>
 <body>
+  <nav>
+    <strong>LG</strong>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Projetos</a>
+    <a href="#">Contato</a>
+  </nav>
+
   <header>
-    <nav>
-      <div class="logo">LG</div>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
+    <img src="assets/lucas.png" alt="Lucas Gontijo" class="photo" />
+    <h1>Sou Lucas Gontijo, QA que transforma bugs em aprendizado</h1>
+    <a href="Profile.pdf" style="color:#fff; background:#3b82f6; padding: 0.5rem 1rem; border-radius: 5px; display: inline-block; margin-top: 1rem;">Baixar CV</a>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Sou Lucas Gontijo, QA que transforma bugs em aprendizado</h1>
-      <a href="Profile.pdf" class="btn">Baixar CV</a>
-    </div>
-    <div class="hero-img">
-      <img src="foto.png" alt="Lucas Gontijo" />
-    </div>
-  </section>
-
-  <section id="about">
+  <section>
     <h2>Sobre mim</h2>
-    <p>Com mais de 7 anos de experiência, atuo com automação de testes, CI/CD, validação de processos e garantia da confiabilidade de sistemas. Implementei ferramentas como Cypress, Playwright, Postman e K6 em projetos reais.</p>
-    <div class="about-stats">
-      <div><strong>7+</strong> Anos de experiência</div>
-      <div><strong>15+</strong> Projetos entregues</div>
-    </div>
+    <p>QA Sênior com trajetória marcada por liderança técnica, excelência em testes automatizados e foco em qualidade ponta a ponta. Atuei como Head de Qualidade na Pacto e atualmente lidero a área de QA na Sittax.</p>
+    <p><strong>Destaques:</strong></p>
+    <ul>
+      <li>✔️ Redução de custos operacionais com Cypress Sorry</li>
+      <li>✔️ Implantação do QASE e padronização de processos</li>
+      <li>✔️ Aumento de cobertura em 40% e redução de execução em 25%</li>
+      <li>✔️ Experiência com testes de performance com K6</li>
+      <li>✔️ Gestão de times, análise de requisitos e CI/CD</li>
+    </ul>
+    <p><strong>7+ Anos de experiência</strong> • <strong>15+ Projetos entregues</strong></p>
   </section>
 
-  <section id="projects">
+  <section>
     <h2>Projetos em Destaque</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <img src="cypress.png" alt="Cypress">
-        <h3>Testes automatizados com Cypress</h3>
+    <div class="projects">
+      <div class="project-card">
+        <img src="assets/cypress.png" alt="Cypress" />
+        <p><strong>Testes automatizados com Cypress</strong></p>
       </div>
-      <div class="card">
-        <img src="postman.png" alt="Postman">
-        <h3>Testes de API com Postman</h3>
+      <div class="project-card">
+        <img src="assets/postman.png" alt="Postman" />
+        <p><strong>Testes de API com Postman</strong></p>
       </div>
-      <div class="card">
-        <img src="playwright.png" alt="Playwright">
-        <h3>Testes confiáveis com Playwright</h3>
+      <div class="project-card">
+        <img src="assets/playwright.png" alt="Playwright" />
+        <p><strong>Testes confiáveis com Playwright</strong></p>
       </div>
     </div>
   </section>
-
-  <section id="contact">
-    <h2>Contato</h2>
-    <p><strong>Email:</strong> <a href="mailto:lucgonpjo@hotmail.com">lucgonpjo@hotmail.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Lucas Gontijo. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
