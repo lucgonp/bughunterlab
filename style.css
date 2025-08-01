@@ -1,4 +1,8 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -90,4 +94,18 @@ footer {
   padding: 20px;
   background-color: #000;
   color: #aaa;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icon {
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }

@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Gontijo | QA</title>
+  <title>Lucas Gontijo | Head de QA</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white">
   <header class="p-6 bg-gray-800 shadow-lg">
@@ -20,22 +22,30 @@
   </header>
 
   <main class="container mx-auto p-6">
-    <section class="text-center mt-10">
-      <h2 class="text-4xl font-bold mb-2">QA que transforma bugs em aprendizado</h2>
-      <a href="assets/Profile.pdf" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white font-semibold">Baixar CV</a>
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between mt-10">
+      <div class="text-center md:text-left max-w-xl">
+        <h2 class="text-5xl font-bold mb-4 gradient-text"><span id="hero-typing">Head de QA</span></h2>
+        <p class="text-gray-300 mb-6">Transformando qualidade em valor de negócio, liderando equipes de alto desempenho e elevando a confiabilidade de produtos.</p>
+        <div class="space-x-4">
+          <a href="assets/Profile.pdf" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white font-semibold">Baixar CV</a>
+          <a href="#contato" class="mt-4 inline-block bg-gray-700 hover:bg-gray-800 px-6 py-2 rounded text-white">Contato</a>
+        </div>
+      </div>
+      <img src="assets/lucas.png" alt="Foto de Lucas Gontijo" class="w-64 h-64 rounded-full border-4 border-blue-600 mb-10 md:mb-0 shadow-lg">
     </section>
 
     <section id="sobre" class="mt-16">
       <h3 class="text-2xl font-bold mb-4">Sobre mim</h3>
-      <p class="mb-2">QA Sênior com trajetória marcada por liderança técnica, excelência em testes automatizados e foco em qualidade ponta a ponta.</p>
+      <p class="mb-2">Head de QA com trajetória marcada por liderança estratégica, construção de times de alta performance e excelência em testes automatizados e processos de qualidade ponta a ponta.</p>
       <ul class="list-disc ml-6 space-y-1 text-sm text-gray-300">
+        <li>✔️ Liderança de time com 12 QAs em ambiente ágil</li>
         <li>✔️ Redução de custos operacionais com Cypress Sorry</li>
         <li>✔️ Implantação do QASE e padronização de processos</li>
         <li>✔️ Aumento de cobertura em 40% e redução de execução em 25%</li>
         <li>✔️ Experiência com testes de performance com K6</li>
         <li>✔️ Gestão de times, análise de requisitos e CI/CD</li>
       </ul>
-      <p class="mt-4 font-bold">7+ Anos de experiência • 15+ Projetos entregues</p>
+      <p class="mt-4 font-bold">7+ Anos de experiência • 15+ Projetos entregues • 3+ Anos liderando equipes</p>
     </section>
 
     <section id="projetos" class="mt-16">
@@ -55,10 +65,29 @@
         </div>
       </div>
     </section>
+
+    <section id="contato" class="mt-16">
+      <h3 class="text-2xl font-bold mb-4">Contato</h3>
+      <p class="mb-4">Quer discutir estratégia de testes ou liderar seu time de QA? Vamos conversar!</p>
+      <div class="flex space-x-6 text-3xl">
+        <a href="https://linkedin.com/in/lucasgontijo" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lucasgontijo" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:lucasgontijo@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
   </main>
 
   <footer class="mt-16 p-6 text-center text-sm text-gray-500">
-    Desenvolvido por Lucas Gontijo | QA Estratégico
+    Desenvolvido por Lucas Gontijo | Head de QA
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed('#hero-typing', {
+      strings: ['Head de QA', 'Especialista em Automação', 'Mentor de Times'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
 </body>
 </html>
